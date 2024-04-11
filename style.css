@@ -1,0 +1,187 @@
+body{
+    background-color: #424C55;
+}
+
+h1{
+    color: #424C55;
+    
+}
+a{
+    color: #BFAEAC;
+    border: #BFAEAC  solid 3px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition: 300ms;
+    &:hover {
+        
+        color: #BFAEAC;
+        background-color: #526676;
+        border: #BFAEAC  solid 3px;
+    }
+
+}
+
+form .inputs .label{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #424C55;
+}
+form{
+    color: #c6d4df;
+    
+   
+    
+}
+
+input[type="text"], textarea{
+    background-color: #424C55;
+    color: #BFAEAC;
+    width:20vw;
+    height: 2.5rem;
+    border-radius: 9px;
+    border: 2px solid #BFAEAC;
+    padding: 0.5rem;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.104), 0 0 10px rgba(0,0,0,.05);
+    word-wrap: break-word;
+}
+
+/* Hide the default file input */
+.custom-file-input input[type="file"] {
+    display: none;
+}
+
+/* Style the custom file input container */
+.custom-file-input label {
+    border: #526676 2px solid;
+    border-radius: 11px;
+    padding: 5px;
+    transition: 300ms;
+    display: inline-block; /* Ensure label is displayed inline */
+    transition: 300ms;
+    &:hover {
+        
+        color: #feffff;
+        background-color: #BFAEAC;
+        border: #526676  solid 2px;
+    }
+}
+
+/* Hover effect for the custom file input */
+.custom-file-input label:hover {
+    background-color: #BFAEAC; /* Darker green background color */
+}
+
+
+.verzendButton{
+    all: unset;
+    border: #666a80 2px solid;
+    border-radius: 11px;
+    padding: 5px;
+    transition: 300ms;
+    &:hover {
+        
+        color: #BFAEAC;
+        background-color: #526676;
+        border: #BFAEAC  solid 2px;
+    }
+
+}
+
+p{
+    color: #BFAEAC;
+}
+
+.bericht {
+    top: 0;
+    width: 30vw;
+    border: 3px solid #BFAEAC;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 30px;
+    transform: translateX(-300%);  
+    transition: transform 0.8s ease, background-color 0.4s ease;
+    word-wrap: break-word;
+}
+
+.bericht:nth-of-type(even) {
+    transform: translateX(-300%);
+    background-color:  #c89216;
+}
+.bericht:nth-of-type(odd) {
+    transform: translateX(-300%);
+    background-color:  #c89216;
+}
+
+
+.bericht.show {
+    transform: translateX(0);
+    background-color:  #424C55;
+}
+.message-container {
+    right: 50px;
+    position: absolute;
+    padding-bottom: 150px;
+    padding-top: 0px;
+    word-wrap: break-word;
+  }
+  
+.formulier{
+    width: 50vw;
+    margin-left: 50px;
+    position: fixed;
+    word-wrap: break-word;
+}
+
+.circle {
+    position: fixed;
+    border-radius: 50%;
+    height: 800px;
+    width: 700px;
+    background-color: #c89216;
+    display: inline-block;
+    z-index: 0;
+    top: -300px;
+    left: -200px;
+    box-shadow: 5px 5px 20px 20px hsla(0, 0%, 10%, 0.355); 
+    transform: rotate(60deg);
+}
+.circle2 {
+    position: fixed;
+    border-radius: 50%;
+    height: 900px;
+    width: 1000px;
+    rotate:  -20deg;
+    background-color: #c89216;
+    display: inline-block;
+    z-index: 0;
+    bottom: -400px;
+    right: -300px;
+    box-shadow: 1px 1px 20px 20px hsla(0, 0%, 10%, 0.358);
+}
+@media screen and (max-width: 600px) {
+    .circle {
+       transform: scale(0.6);
+       left: -300px;
+     }
+     .circle2 {
+        transform: scale(0.6);
+        right: -500px;
+      }
+   }
+   @media screen and (max-width: 300px) {
+    .circle {
+       transform: scale(0.7);
+       left: -250px;
+       top: -300px;
+       width: 750px;
+     }
+     .circle2 {
+        transform: scale(0.6);
+        right: -300px;
+      }
+   }
+
